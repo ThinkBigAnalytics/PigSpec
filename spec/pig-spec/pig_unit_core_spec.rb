@@ -174,13 +174,13 @@ describe PigSpec do
     end
 
     it "should call the build_cmd_line helper method" do
-      subject.should_receive(:build_cmd_line).with(pig_binary, script_name, params).and_return("echo 'echo' is a harmless command")
+      subject.should_receive(:build_cmd_line).with(pig_binary, script_name, params).and_return("true")
       subject.run_script(pig_binary, script_name, params)
     end
 
     it "should print the command that it is running to stdout" do
-      subject.stub(:build_cmd_line => 'echo')
-      mock_stdout.should_receive(:puts).with("Running the following command: echo")
+      subject.stub(:build_cmd_line => 'true')
+      mock_stdout.should_receive(:puts).with("Running the following command: true")
       subject.run_script(pig_binary, script_name, params)
     end
 
