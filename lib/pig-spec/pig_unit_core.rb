@@ -1,7 +1,7 @@
 module PigSpec
   require 'fileutils'
   INPUT_DIR_PREFIX = "pig_test_"
-  PIG_CMD_PREFIX = "java -jar "
+  PIG_CMD_PREFIX = "pig"
 
   attr_reader :output_files, :input_dir, :error_stream, :stdout_stream, :exit_code
   @@test_number = 0
@@ -42,7 +42,7 @@ module PigSpec
   def build_cmd_line(pig_binary, pig_script, params)
     pig_params = build_pig_script_params(params)
     pig_params = pig_params.empty? ? "" : "#{pig_params} "
-    "#{PIG_CMD_PREFIX}#{pig_binary} -x local #{pig_params}#{pig_script}"
+    "#{PIG_CMD_PREFIX} #{pig_params}#{pig_script}"
   end
 
   def run_script(pig_binary, pig_script, params)
