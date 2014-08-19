@@ -1,3 +1,7 @@
+#------------------------------------------------------------------------------
+# Copyright (C) 2010-2014 Think Big Analytics, Inc. All Rights Reserved.
+#------------------------------------------------------------------------------
+
 require 'spec_helper'
 require 'pig-spec/pig_unit_core'
 

@@ -1,3 +1,7 @@
+#------------------------------------------------------------------------------
+# Copyright (C) 2010-2014 Think Big Analytics, Inc. All Rights Reserved.
+#------------------------------------------------------------------------------
+
 module PigSpec
   require 'fileutils'
   INPUT_DIR_PREFIX = "pig_test_"

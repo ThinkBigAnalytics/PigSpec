@@ -1,4 +1,7 @@
 # -*- encoding: utf-8 -*-
+#------------------------------------------------------------------------------
+# Copyright (C) 2010-2014 Think Big Analytics, Inc. All Rights Reserved.
+#------------------------------------------------------------------------------
 $:.push File.expand_path("../lib", __FILE__)
 require "pig-spec/version"
 

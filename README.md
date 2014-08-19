@@ -1,3 +1,7 @@
+PigSpec README
+==============
+*Copyright (C) 2010-2014 Think Big Analytics, Inc. All Rights Reserved.*
+
 Summary/Description
 ===================
 PigSpec is a Ruby gem which can be used to test Pig scripts.  It was designed to be easily integrated with the RSpec framework.  It is loosely based on PigUnit (see: https://pig.apache.org/docs/r0.8.1/pigunit.html).
